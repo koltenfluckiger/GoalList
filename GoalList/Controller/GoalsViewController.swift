@@ -18,8 +18,6 @@ class GoalsViewController: UIViewController {
     // MARK: Variables
     var goals = [Goal]()
 
-    let presentationViewController = PresentationViewController()
-
     // MARK: Life Cycle Functions
     
     override func viewDidLoad() {
@@ -33,29 +31,30 @@ class GoalsViewController: UIViewController {
         getGoals()
     }
     
-    // MARK: Outlet Actions
-    
-    @IBAction func addButton(_: UIButton) {
-        performSegue(withIdentifier: ADD_GOAL, sender: self)
+    override func viewDidDisappear(_ animated: Bool) {
+        NotificationCenter.default.removeObserver(self, name: NSNotification.Name("goalDidComplete"), object: nil)
     }
-
+    
     // MARK: Functions
     
     @objc func goalCompleted() {
-        
+        print("Goal did complete")
     }
     
     func getGoals() {
         let context = appDelegate.persistentContainer.viewContext
         let fetchResult = NSFetchRequest<Goal>(entityName: "Goal")
         let goalRetriever = GoalRetriever(managedContext: context, fetchRequest: fetchResult)
-
+        
         goalRetriever.executeFetch(completion: { [weak self] goal in
             guard let goals = goal else { return }
             self?.goals = goals
         })
     }
     
+    // MARK: Outlet Actions
     
-    
+    @IBAction func addButton(_: UIButton) {
+        performSegue(withIdentifier: ADD_GOAL, sender: self)
+    }
 }

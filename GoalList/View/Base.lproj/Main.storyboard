@@ -66,7 +66,7 @@
                                     <constraint firstAttribute="bottom" secondItem="dbi-jQ-49P" secondAttribute="bottom" constant="8" id="yhb-Of-09G"/>
                                 </constraints>
                             </view>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ZoH-Mj-AEH">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ZoH-Mj-AEH">
                                 <rect key="frame" x="0.0" y="85" width="320" height="483"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </tableView>
@@ -197,7 +197,7 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="dGA-mV-wSn">
                                         <rect key="frame" x="0.0" y="165" width="288" height="50"/>
                                         <subviews>
-                                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q9L-Ps-3Ou" customClass="GoalButton" customModule="GoalList" customModuleProvider="target">
+                                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q9L-Ps-3Ou" customClass="GoalButtonView" customModule="GoalList" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="136" height="50"/>
                                                 <color key="backgroundColor" red="0.22745098039215686" green="0.80784313725490198" blue="0.1803921568627451" alpha="1" colorSpace="calibratedRGB"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
@@ -209,7 +209,7 @@
                                                     <action selector="shortTermGoalButton:" destination="zug-5X-ZFI" eventType="touchUpInside" id="utN-Ji-OdG"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e9N-kr-XB9" customClass="GoalButton" customModule="GoalList" customModuleProvider="target">
+                                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e9N-kr-XB9" customClass="GoalButtonView" customModule="GoalList" customModuleProvider="target">
                                                 <rect key="frame" x="152" y="0.0" width="136" height="50"/>
                                                 <color key="backgroundColor" red="0.22745098039215686" green="0.80784313725490198" blue="0.1803921568627451" alpha="1" colorSpace="calibratedRGB"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
@@ -383,6 +383,7 @@
                     <connections>
                         <outlet property="addGoalBottomConstraint" destination="Rte-WE-S2p" id="ozX-bP-0VS"/>
                         <outlet property="addGoalButton" destination="2GH-r4-APm" id="gvz-eD-BRP"/>
+                        <outlet property="mainView" destination="zMB-u3-YdB" id="CcR-HH-oiF"/>
                         <outlet property="pointsTextField" destination="Ghi-qH-yaI" id="Otc-fa-nS0"/>
                         <segue destination="BYZ-38-t0r" kind="show" identifier="backHome" id="DHi-o6-QHD"/>
                     </connections>

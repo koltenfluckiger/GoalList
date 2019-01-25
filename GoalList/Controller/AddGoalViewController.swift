@@ -14,7 +14,7 @@ class AddGoalViewController: UIViewController {
     
     // MARK: Outlets
 
-    @IBOutlet var mainView: UIView! {
+    @IBOutlet weak var mainView: UIView! {
         didSet {
             let tapGesture = UITapGestureRecognizer(target: self, action: #selector(dismissKeyboard))
             mainView.addGestureRecognizer(tapGesture)
@@ -23,8 +23,8 @@ class AddGoalViewController: UIViewController {
 
     @IBOutlet var goalTextView: UITextView!
     @IBOutlet var buttonStackView: UIStackView!
-    @IBOutlet var shortTermButton: GoalButton!
-    @IBOutlet var longTermButton: GoalButton!
+    @IBOutlet var shortTermButton: GoalButtonView!
+    @IBOutlet var longTermButton: GoalButtonView!
     @IBOutlet var nextButton: UIButton!
 
     //  MARK: Properties

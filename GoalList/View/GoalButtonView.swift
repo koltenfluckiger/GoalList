@@ -8,7 +8,7 @@
 
 import UIKit
 
-class GoalButton: UIButton {
+class GoalButtonView: UIButton {
     public override var isSelected: Bool {
         didSet {
             switch isSelected {

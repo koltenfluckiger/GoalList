@@ -25,6 +25,7 @@
 		7941747E20E95126002EA16A /* GoalListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7941747D20E95126002EA16A /* GoalListTests.swift */; };
 		7941748C20E96376002EA16A /* SegueIdentifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7941748B20E96376002EA16A /* SegueIdentifiers.swift */; };
 		794ED41320EC422700DB5982 /* GoalSaver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 794ED41220EC422700DB5982 /* GoalSaver.swift */; };
+		7978A2EA21FBBBC500728B39 /* PresentationViewControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7978A2E921FBBBC500728B39 /* PresentationViewControllerFactory.swift */; };
 		797B6AC620EECFB300E4AF8D /* Goal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797B6AC520EECFB300E4AF8D /* Goal.swift */; };
 		797B6ACA20EED85000E4AF8D /* GoalTableViewCellConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797B6AC920EED85000E4AF8D /* GoalTableViewCellConfigurator.swift */; };
 		797B6ACC20EEDE0700E4AF8D /* GoalDeleter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797B6ACB20EEDE0700E4AF8D /* GoalDeleter.swift */; };
@@ -37,7 +38,7 @@
 		79DDCA5120ED31CD002DF38B /* PointsViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79DDCA5020ED31CD002DF38B /* PointsViewControllerExtension.swift */; };
 		79DDCA5320ED33B8002DF38B /* UIViewShakeExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79DDCA5220ED33B8002DF38B /* UIViewShakeExtension.swift */; };
 		79EB485720E995DB006E1EE5 /* GoalType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79EB485620E995DB006E1EE5 /* GoalType.swift */; };
-		79EB485920E997E4006E1EE5 /* GoalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79EB485820E997E4006E1EE5 /* GoalView.swift */; };
+		79EB485920E997E4006E1EE5 /* GoalButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79EB485820E997E4006E1EE5 /* GoalButtonView.swift */; };
 		79EB487B20E9CA23006E1EE5 /* PlaceholderVisibility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79EB487A20E9CA23006E1EE5 /* PlaceholderVisibility.swift */; };
 /* End PBXBuildFile section */
 
@@ -74,6 +75,7 @@
 		7941747F20E95126002EA16A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7941748B20E96376002EA16A /* SegueIdentifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegueIdentifiers.swift; sourceTree = "<group>"; };
 		794ED41220EC422700DB5982 /* GoalSaver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalSaver.swift; sourceTree = "<group>"; };
+		7978A2E921FBBBC500728B39 /* PresentationViewControllerFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentationViewControllerFactory.swift; sourceTree = "<group>"; };
 		797B6AC520EECFB300E4AF8D /* Goal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Goal.swift; sourceTree = "<group>"; };
 		797B6AC920EED85000E4AF8D /* GoalTableViewCellConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalTableViewCellConfigurator.swift; sourceTree = "<group>"; };
 		797B6ACB20EEDE0700E4AF8D /* GoalDeleter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalDeleter.swift; sourceTree = "<group>"; };
@@ -86,7 +88,7 @@
 		79DDCA5020ED31CD002DF38B /* PointsViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PointsViewControllerExtension.swift; sourceTree = "<group>"; };
 		79DDCA5220ED33B8002DF38B /* UIViewShakeExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewShakeExtension.swift; sourceTree = "<group>"; };
 		79EB485620E995DB006E1EE5 /* GoalType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalType.swift; sourceTree = "<group>"; };
-		79EB485820E997E4006E1EE5 /* GoalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalView.swift; sourceTree = "<group>"; };
+		79EB485820E997E4006E1EE5 /* GoalButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalButtonView.swift; sourceTree = "<group>"; };
 		79EB487A20E9CA23006E1EE5 /* PlaceholderVisibility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceholderVisibility.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -141,6 +143,7 @@
 		7941746420E95125002EA16A /* GoalList */ = {
 			isa = PBXGroup;
 			children = (
+				7978A2E821FBBBA400728B39 /* Factories */,
 				794ED40F20EC40C900DB5982 /* Protocols */,
 				79EB485520E995CB006E1EE5 /* Enums */,
 				793F142F20E9762B001315B7 /* Extensions */,
@@ -181,7 +184,7 @@
 				7941747120E95126002EA16A /* LaunchScreen.storyboard */,
 				793F143620E97DAD001315B7 /* GoalTableViewCell.swift */,
 				793F143720E97DAD001315B7 /* GoalTableViewCell.xib */,
-				79EB485820E997E4006E1EE5 /* GoalView.swift */,
+				79EB485820E997E4006E1EE5 /* GoalButtonView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -190,11 +193,11 @@
 			isa = PBXGroup;
 			children = (
 				797B6ACD20EEDF3200E4AF8D /* GoalsManager */,
-				7941746C20E95125002EA16A /* GoalList.xcdatamodeld */,
 				7941748B20E96376002EA16A /* SegueIdentifiers.swift */,
 				793F143220E97711001315B7 /* Constants.swift */,
 				797B6AC520EECFB300E4AF8D /* Goal.swift */,
 				797B6AC920EED85000E4AF8D /* GoalTableViewCellConfigurator.swift */,
+				7941746C20E95125002EA16A /* GoalList.xcdatamodeld */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -207,6 +210,14 @@
 				791E92F92127BED6000B8295 /* Updatable.swift */,
 			);
 			path = Protocols;
+			sourceTree = "<group>";
+		};
+		7978A2E821FBBBA400728B39 /* Factories */ = {
+			isa = PBXGroup;
+			children = (
+				7978A2E921FBBBC500728B39 /* PresentationViewControllerFactory.swift */,
+			);
+			path = Factories;
 			sourceTree = "<group>";
 		};
 		797B6ACD20EEDF3200E4AF8D /* GoalsManager */ = {
@@ -345,10 +356,11 @@
 				7941746820E95125002EA16A /* GoalsViewController.swift in Sources */,
 				791E92FA2127BED6000B8295 /* Updatable.swift in Sources */,
 				797B6ACC20EEDE0700E4AF8D /* GoalDeleter.swift in Sources */,
+				7978A2EA21FBBBC500728B39 /* PresentationViewControllerFactory.swift in Sources */,
 				79DDCA4F20ED2D31002DF38B /* PointsViewController.swift in Sources */,
 				79DDCA5120ED31CD002DF38B /* PointsViewControllerExtension.swift in Sources */,
 				793F143320E97711001315B7 /* Constants.swift in Sources */,
-				79EB485920E997E4006E1EE5 /* GoalView.swift in Sources */,
+				79EB485920E997E4006E1EE5 /* GoalButtonView.swift in Sources */,
 				791E92F62127B7A3000B8295 /* GoalUpdater.swift in Sources */,
 				79EB485720E995DB006E1EE5 /* GoalType.swift in Sources */,
 				791E92F82127B914000B8295 /* Deletable.swift in Sources */,
@@ -521,7 +533,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = YC4AH8GSKC;
 				INFOPLIST_FILE = GoalList/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.3.1;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -540,7 +552,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = YC4AH8GSKC;
 				INFOPLIST_FILE = GoalList/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.3.1;
 				LD_RUNPATH_SEARCH_PATHS = (

@@ -15,9 +15,16 @@ class PointsViewController: UIViewController {
 
     // MARK: Outlets
 
+    @IBOutlet weak var mainView: UIView! {
+        didSet {
+            let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(dismissKeyboard))
+            mainView.addGestureRecognizer(tapGestureRecognizer)
+        }
+    }
     @IBOutlet var pointsTextField: UITextField!
     @IBOutlet var addGoalButton: UIButton!
     @IBOutlet weak var addGoalBottomConstraint: NSLayoutConstraint!
+    
     var goalDescription: String!
     var goalType: GoalType!
     

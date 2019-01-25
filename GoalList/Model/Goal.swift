@@ -31,7 +31,12 @@ class Goal: NSManagedObject, Saveable, Deletable, Updatable {
 
     func updateProgress() {
 
-        self.goalProgress += 1
+        if self.goalProgress < self.goalLimit {
+            self.goalProgress += 1
+            if self.goalProgress == self.goalLimit {
+                NotificationCenter.default.post(name: NSNotification.Name("goalDidComplete"), object: nil)
+            }
+        }
 
         do {
             try managedObjectContext?.save()

@@ -22,27 +22,25 @@ class GoalTableViewCellConfigurator {
         cell.goalPointsLabel.text = String(goalProgress)
 
         if goal.goalProgress == goal.goalLimit {
-
+            
             let completionView = UIView(frame: cell.frame)
             let completedLabel = UILabel(frame: cell.frame)
 
-            completionView.backgroundColor = UIColor(red: 44 / 255, green: 156 / 255, blue: 35 / 255, alpha: 0.2)
+            completedLabel.text = "Goal Complete"
+
+            completionView.backgroundColor = UIColor(red: 44 / 255, green: 156 / 255, blue: 35 / 255, alpha: 0.4)
             completedLabel.font = UIFont.systemFont(ofSize: 24, weight: .heavy)
             completedLabel.textColor = .black
-            
+
             completionView.translatesAutoresizingMaskIntoConstraints = false
             completedLabel.translatesAutoresizingMaskIntoConstraints = false
 
             cell.addSubview(completionView)
-            cell.addSubview(completedLabel)
+            cell.insertSubview(completedLabel, aboveSubview: completionView)
 
             NSLayoutConstraint.activate([completionView.leadingAnchor.constraint(equalTo: cell.leadingAnchor), completionView.trailingAnchor.constraint(equalTo: cell.trailingAnchor), completionView.topAnchor.constraint(equalTo: cell.topAnchor),
-                                            completionView.bottomAnchor.constraint(equalTo: cell.bottomAnchor), completedLabel.leadingAnchor.constraint(equalTo: cell.leadingAnchor), completedLabel.trailingAnchor.constraint(equalTo: cell.trailingAnchor), completedLabel.topAnchor.constraint(equalTo: cell.topAnchor),
-                                            completedLabel.bottomAnchor.constraint(equalTo: cell.bottomAnchor)])
-
-        }
-        else {
-
+                completionView.bottomAnchor.constraint(equalTo: cell.bottomAnchor)])
+            NSLayoutConstraint.activate([completedLabel.centerXAnchor.constraint(equalTo: completionView.centerXAnchor), completedLabel.centerYAnchor.constraint(equalTo: completionView.centerYAnchor)])
         }
     }
 }

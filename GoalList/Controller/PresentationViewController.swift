@@ -17,10 +17,9 @@ class PresentationViewController: NSObject, UIViewControllerAnimatedTransitionin
     }
 
     func animateTransition(using transitionContext: UIViewControllerContextTransitioning) {
-        guard let destination = transitionContext.viewController(forKey: .to) else { return }
-        guard let presenter = transitionContext.viewController(forKey: .from) else { return }
-        presenter.view.addSubview(destination.view)
-//        print("HERE")
+//        guard let destination = transitionContext.viewController(forKey: .to) else { return }
+//        guard let presenter = transitionContext.viewController(forKey: .from) else { return }
+//        presenter.view.addSubview(destination.view)
 //        if direction == .forward {
 //            let animator = UIViewPropertyAnimator(duration: 1.0, dampingRatio: 0.5) {
 //                destination.view.frame = CGRect(
