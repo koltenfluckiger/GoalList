@@ -1,6 +1,6 @@
 //
 //  AppDelegate.swift
-//  GoalList
+//  GoalieList
 //
 //  Created by Kolten Fluckiger on 7/1/18.
 //  Copyright © 2018 Kolten Fluckiger. All rights reserved.
@@ -38,7 +38,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     // MARK: - Core Data stack
 
     lazy var persistentContainer: NSPersistentContainer = {
-        let container = NSPersistentContainer(name: "GoalList")
+        let container = NSPersistentContainer(name: "GoalieList")
         container.loadPersistentStores(completionHandler: { _, error in
             if let error = error as NSError? {
                 // Replace this implementation with code to handle the error appropriately.

@@ -1,6 +1,6 @@
 //
 //  UIButtonExtension.swift
-//  GoalList
+//  GoalieList
 //
 //  Created by Kolten Fluckiger on 7/3/18.
 //  Copyright © 2018 Kolten Fluckiger. All rights reserved.

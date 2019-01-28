@@ -1,6 +1,6 @@
 //
 //  AddGoalViewControllerExtension.swift
-//  GoalList
+//  GoalieList
 //
 //  Created by Kolten Fluckiger on 7/1/18.
 //  Copyright © 2018 Kolten Fluckiger. All rights reserved.
@@ -15,7 +15,7 @@ extension AddGoalViewController: UITextViewDelegate {
             let currentText = goalTextView.text ?? ""
             guard let stringRange = Range(range, in: currentText) else { return false }
             let changedText = currentText.replacingCharacters(in: stringRange, with: text)
-            return changedText.count <= 40
+            return changedText.count <= 35
         }
         return true
     }

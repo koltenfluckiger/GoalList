@@ -1,6 +1,6 @@
 //
 //  PointsViewControllerExtension.swift
-//  GoalList
+//  GoalieList
 //
 //  Created by Kolten Fluckiger on 7/4/18.
 //  Copyright © 2018 Kolten Fluckiger. All rights reserved.
@@ -16,8 +16,9 @@ extension PointsViewController: UITextFieldDelegate {
             let currentText = pointsTextField.text ?? ""
             guard let stringRange = Range(range, in: currentText) else { return false }
             let changedText = currentText.replacingCharacters(in: stringRange, with: string)
-            return changedText.count <= 4
+            return changedText.count <= 3
         }
         return true
     }
+
 }

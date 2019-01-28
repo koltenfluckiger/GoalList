@@ -1,6 +1,6 @@
 //
 //  Goal.swift
-//  GoalList
+//  GoalieList
 //
 //  Created by Kolten Fluckiger on 7/5/18.
 //  Copyright © 2018 Kolten Fluckiger. All rights reserved.
@@ -23,7 +23,7 @@ class Goal: NSManagedObject, Saveable, Deletable, Updatable {
     func fetch() {
         do {
             let fetchRequest = NSFetchRequest<Goal>(entityName: "Goal")
-            try managedObjectContext?.fetch(fetchRequest)
+            _ = try managedObjectContext?.fetch(fetchRequest)
         } catch let error {
             print("Error message: " + error.localizedDescription)
         }

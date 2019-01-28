@@ -1,6 +1,6 @@
 //
 //  GoalsViewController.swift
-//  GoalList
+//  GoalieList
 //
 //  Created by Kolten Fluckiger on 7/1/18.
 //  Copyright © 2018 Kolten Fluckiger. All rights reserved.
@@ -62,7 +62,7 @@ extension GoalsViewController: UITableViewDelegate, UITableViewDataSource, UIVie
 
         let addAction = UITableViewRowAction(style: .normal, title: "ADD 1") { [weak self] _, indexPath in
 
-            guard let self = self else { return }
+            guard self == self else { return }
             
             if chosenGoal.goalProgress < chosenGoal.goalLimit {
                 let goalUpdater = GoalUpdater()

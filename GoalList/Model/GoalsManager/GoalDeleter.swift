@@ -1,6 +1,6 @@
 //
 //  GoalsDeleter.swift
-//  GoalList
+//  GoalieList
 //
 //  Created by Kolten Fluckiger on 7/5/18.
 //  Copyright © 2018 Kolten Fluckiger. All rights reserved.

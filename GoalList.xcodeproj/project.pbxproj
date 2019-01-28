@@ -24,6 +24,7 @@
 		7941747320E95126002EA16A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7941747120E95126002EA16A /* LaunchScreen.storyboard */; };
 		7941747E20E95126002EA16A /* GoalListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7941747D20E95126002EA16A /* GoalListTests.swift */; };
 		7941748C20E96376002EA16A /* SegueIdentifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7941748B20E96376002EA16A /* SegueIdentifiers.swift */; };
+		794D48C121FBF76E001517A1 /* ConfettiView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 794D48C021FBF76E001517A1 /* ConfettiView.swift */; };
 		794ED41320EC422700DB5982 /* GoalSaver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 794ED41220EC422700DB5982 /* GoalSaver.swift */; };
 		7978A2EA21FBBBC500728B39 /* PresentationViewControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7978A2E921FBBBC500728B39 /* PresentationViewControllerFactory.swift */; };
 		797B6AC620EECFB300E4AF8D /* Goal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797B6AC520EECFB300E4AF8D /* Goal.swift */; };
@@ -74,6 +75,7 @@
 		7941747D20E95126002EA16A /* GoalListTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalListTests.swift; sourceTree = "<group>"; };
 		7941747F20E95126002EA16A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7941748B20E96376002EA16A /* SegueIdentifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegueIdentifiers.swift; sourceTree = "<group>"; };
+		794D48C021FBF76E001517A1 /* ConfettiView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfettiView.swift; sourceTree = "<group>"; };
 		794ED41220EC422700DB5982 /* GoalSaver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalSaver.swift; sourceTree = "<group>"; };
 		7978A2E921FBBBC500728B39 /* PresentationViewControllerFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentationViewControllerFactory.swift; sourceTree = "<group>"; };
 		797B6AC520EECFB300E4AF8D /* Goal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Goal.swift; sourceTree = "<group>"; };
@@ -185,6 +187,7 @@
 				793F143620E97DAD001315B7 /* GoalTableViewCell.swift */,
 				793F143720E97DAD001315B7 /* GoalTableViewCell.xib */,
 				79EB485820E997E4006E1EE5 /* GoalButtonView.swift */,
+				794D48C021FBF76E001517A1 /* ConfettiView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -361,6 +364,7 @@
 				79DDCA5120ED31CD002DF38B /* PointsViewControllerExtension.swift in Sources */,
 				793F143320E97711001315B7 /* Constants.swift in Sources */,
 				79EB485920E997E4006E1EE5 /* GoalButtonView.swift in Sources */,
+				794D48C121FBF76E001517A1 /* ConfettiView.swift in Sources */,
 				791E92F62127B7A3000B8295 /* GoalUpdater.swift in Sources */,
 				79EB485720E995DB006E1EE5 /* GoalType.swift in Sources */,
 				791E92F82127B914000B8295 /* Deletable.swift in Sources */,
@@ -535,12 +539,12 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = YC4AH8GSKC;
 				INFOPLIST_FILE = GoalList/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.3.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.koltenfluckiger.GoalList;
+				PRODUCT_BUNDLE_IDENTIFIER = com.koltenfluckiger.GoalieList;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -554,12 +558,12 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = YC4AH8GSKC;
 				INFOPLIST_FILE = GoalList/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.3.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.koltenfluckiger.GoalList;
+				PRODUCT_BUNDLE_IDENTIFIER = com.koltenfluckiger.GoalieList;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 1;

@@ -1,6 +1,6 @@
 //
 //  PointsViewController.swift
-//  GoalList
+//  GoalieList
 //
 //  Created by Kolten Fluckiger on 7/4/18.
 //  Copyright © 2018 Kolten Fluckiger. All rights reserved.
@@ -23,7 +23,7 @@ class PointsViewController: UIViewController {
     }
     @IBOutlet var pointsTextField: UITextField!
     @IBOutlet var addGoalButton: UIButton!
-    @IBOutlet weak var addGoalBottomConstraint: NSLayoutConstraint!
+
     
     var goalDescription: String!
     var goalType: GoalType!
@@ -37,8 +37,8 @@ class PointsViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        pointsTextField.delegate = self
         addGoalButton.attachKeyboardObserver()
+        pointsTextField.delegate = self
     }
 
     override func viewDidDisappear(_ animated: Bool) {

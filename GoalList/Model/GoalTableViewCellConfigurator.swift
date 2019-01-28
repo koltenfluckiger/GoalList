@@ -1,6 +1,6 @@
 //
 //  GoalTableViewCellConfigurator.swift
-//  GoalList
+//  GoalieList
 //
 //  Created by Kolten Fluckiger on 7/5/18.
 //  Copyright © 2018 Kolten Fluckiger. All rights reserved.
@@ -16,10 +16,11 @@ class GoalTableViewCellConfigurator {
         guard let description = goal.goalDescription else { return }
         guard let goalType = goal.goalType else { return }
         let goalProgress = goal.goalProgress
+        let goalLimit = goal.goalLimit
 
         cell.goalLabel.text = "Goal: \(String(describing: description))"
         cell.goalTypeLabel.text = "Type: \(String(describing: goalType))"
-        cell.goalPointsLabel.text = String(goalProgress)
+        cell.goalPointsLabel.text = String(goalProgress) + "/\(goalLimit)"
 
         if goal.goalProgress == goal.goalLimit {
             

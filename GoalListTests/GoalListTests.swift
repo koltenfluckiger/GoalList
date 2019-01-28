@@ -1,15 +1,15 @@
 //
-//  GoalListTests.swift
-//  GoalListTests
+//  GoalieListTests.swift
+//  GoalieListTests
 //
 //  Created by Kolten Fluckiger on 7/1/18.
 //  Copyright © 2018 Kolten Fluckiger. All rights reserved.
 //
 
-@testable import GoalList
+@testable import GoalieList
 import XCTest
 
-class GoalListTests: XCTestCase {
+class GoalieListTests: XCTestCase {
     override func setUp() {
         super.setUp()
         // Put setup code here. This method is called before the invocation of each test method in the class.
