@@ -12,9 +12,7 @@ import UIKit
 // MARK: GoalsViewControllerExtension
 
 extension GoalsViewController: UITableViewDelegate, UITableViewDataSource, UIViewControllerTransitioningDelegate {
-    func animationController(forPresented _: UIViewController, presenting _: UIViewController, source _: UIViewController) -> UIViewControllerAnimatedTransitioning? {
-        return PresentationViewControllerFactory.create()
-    }
+    
 
     func tableView(_: UITableView, numberOfRowsInSection _: Int) -> Int {
         return goals.count
@@ -75,5 +73,19 @@ extension GoalsViewController: UITableViewDelegate, UITableViewDataSource, UIVie
         addAction.backgroundColor = #colorLiteral(red: 0.961445272, green: 0.650790751, blue: 0.1328578591, alpha: 1)
         
         return [deleteAction, addAction]
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == ADD_GOAL {
+            let addGoalViewController = segue.destination as! AddGoalViewController
+            addGoalViewController.transitioningDelegate = self
+        }
+    }
+    
+    func animationController(forPresented presented: UIViewController, presenting: UIViewController, source: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+        return PresenterViewController()
+    }
+    func animationController(forDismissed dismissed: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+        return DismissalViewContoller()
     }
 }

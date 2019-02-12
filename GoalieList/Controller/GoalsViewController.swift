@@ -15,6 +15,7 @@ class GoalsViewController: UIViewController {
 
     // MARK: Outlets
     @IBOutlet var goalTableView: UITableView!
+
     // MARK: Variables
     var goals = [Goal]()
 
@@ -58,14 +59,15 @@ class GoalsViewController: UIViewController {
         let goalRetriever = GoalRetriever(managedContext: context, fetchRequest: fetchResult)
 
         goalRetriever.executeFetch(completion: { [weak self] goal in
+            guard let self = self else {return}
             guard let goals = goal else { return }
-            self?.goals = goals
+            self.goals = goals
         })
     }
 
     // MARK: Outlet Actions
 
     @IBAction func addButton(_: UIButton) {
-        performSegue(withIdentifier: ADD_GOAL, sender: self)
+        self.performSegue(withIdentifier: ADD_GOAL, sender: self)
     }
 }

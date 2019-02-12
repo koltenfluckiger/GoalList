@@ -76,40 +76,45 @@
                                 <rect key="frame" x="0.0" y="85" width="375" height="693"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </tableView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="F7k-XX-nUh">
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="-50" translatesAutoresizingMaskIntoConstraints="NO" id="frS-uW-KvX">
                                 <rect key="frame" x="67.666666666666686" y="342" width="240" height="128"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to GoalieList!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sfy-yq-Jne">
+                                        <rect key="frame" x="11.666666666666657" y="0.0" width="216.33333333333334" height="89"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="To begin add a goal!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mik-13-j2P">
+                                        <rect key="frame" x="43.666666666666657" y="39" width="152.33333333333334" height="89"/>
+                                        <fontDescription key="fontDescription" type="system" weight="thin" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="128" id="SHn-f3-pQp"/>
-                                    <constraint firstAttribute="width" constant="240" id="sY0-Ng-8ha"/>
+                                    <constraint firstAttribute="height" constant="128" id="2gP-Qd-gdL"/>
+                                    <constraint firstAttribute="width" constant="240" id="Lpb-pg-MHQ"/>
                                 </constraints>
-                            </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="To get started please create a goal!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gua-YP-2LD">
-                                <rect key="frame" x="52.666666666666657" y="396" width="269.66666666666674" height="20.333333333333314"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="F7k-XX-nUh" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="20I-39-4y9"/>
+                            <constraint firstItem="frS-uW-KvX" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="AHY-Pv-s3R"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ZoH-Mj-AEH" secondAttribute="bottom" id="BI3-DD-ZSV"/>
-                            <constraint firstItem="gua-YP-2LD" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="CG1-aU-wIM"/>
                             <constraint firstItem="ZoH-Mj-AEH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="D4C-sx-Spv"/>
                             <constraint firstItem="QxB-fY-JyH" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="JOI-Vm-ioD"/>
+                            <constraint firstItem="frS-uW-KvX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="K1S-pR-Rxo"/>
                             <constraint firstItem="QxB-fY-JyH" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Oah-Lq-buH"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ZoH-Mj-AEH" secondAttribute="trailing" id="Snn-Jq-GYZ"/>
                             <constraint firstItem="ZoH-Mj-AEH" firstAttribute="top" secondItem="QxB-fY-JyH" secondAttribute="bottom" id="Zt5-5d-di0"/>
-                            <constraint firstItem="gua-YP-2LD" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dm5-ZB-xKU"/>
-                            <constraint firstItem="F7k-XX-nUh" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="yo9-KA-WPU"/>
                             <constraint firstItem="QxB-fY-JyH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="zuz-gs-yIl"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
                         <outlet property="goalTableView" destination="ZoH-Mj-AEH" id="em0-kg-FmD"/>
-                        <segue destination="zug-5X-ZFI" kind="show" identifier="setGoal" id="0NB-uS-udh"/>
+                        <segue destination="zug-5X-ZFI" kind="presentation" identifier="ToAddGoalsViewController" id="tvP-HE-sYJ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -119,7 +124,7 @@
         <!--Add Goal View Controller-->
         <scene sceneID="7Wt-Eh-72O">
             <objects>
-                <viewController id="zug-5X-ZFI" customClass="AddGoalViewController" customModule="GoalList" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="AddGoalViewController" id="zug-5X-ZFI" customClass="AddGoalViewController" customModule="GoalList" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="oAf-wF-gv3">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -274,17 +279,17 @@
                         <outlet property="mainView" destination="oAf-wF-gv3" id="LF3-eE-orF"/>
                         <outlet property="nextButton" destination="NGt-Mb-QhS" id="xQD-ME-b2y"/>
                         <outlet property="shortTermButton" destination="Q9L-Ps-3Ou" id="h12-ST-sXs"/>
-                        <segue destination="FG2-Up-DBr" kind="show" identifier="setPoints" id="Bbj-WT-veb"/>
+                        <segue destination="FG2-Up-DBr" kind="presentation" identifier="ToPointsViewController" id="Nnl-Qd-pZ5"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0Qa-NX-M6Z" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2756" y="117.48768472906404"/>
+            <point key="canvasLocation" x="2756" y="114"/>
         </scene>
         <!--Points View Controller-->
         <scene sceneID="HjA-eJ-wdJ">
             <objects>
-                <viewController id="FG2-Up-DBr" customClass="PointsViewController" customModule="GoalList" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="PointsViewController" id="FG2-Up-DBr" customClass="PointsViewController" customModule="GoalList" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="zMB-u3-YdB">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -382,7 +387,6 @@
                                         </userDefinedRuntimeAttributes>
                                         <connections>
                                             <action selector="addGoalButton:" destination="FG2-Up-DBr" eventType="touchUpInside" id="Mtz-UA-Bzi"/>
-                                            <action selector="nextButton:" destination="zug-5X-ZFI" eventType="touchUpInside" id="hHL-g4-CRs"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -413,7 +417,7 @@
                         <outlet property="addGoalButton" destination="7co-sk-nw0" id="n74-fe-Klf"/>
                         <outlet property="mainView" destination="zMB-u3-YdB" id="CcR-HH-oiF"/>
                         <outlet property="pointsTextField" destination="Ghi-qH-yaI" id="Otc-fa-nS0"/>
-                        <segue destination="BYZ-38-t0r" kind="show" identifier="backHome" id="DHi-o6-QHD"/>
+                        <segue destination="BYZ-38-t0r" kind="presentation" identifier="BackToGoalsViewController" id="NlX-Lp-v3e"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AEC-Pv-cN3" userLabel="First Responder" sceneMemberID="firstResponder"/>

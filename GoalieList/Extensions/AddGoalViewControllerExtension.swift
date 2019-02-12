@@ -9,7 +9,8 @@
 import Foundation
 import UIKit
 
-extension AddGoalViewController: UITextViewDelegate {
+extension AddGoalViewController: UITextViewDelegate, UIViewControllerTransitioningDelegate {
+    
     func textView(_ textView: UITextView, shouldChangeTextIn range: NSRange, replacementText text: String) -> Bool {
         if textView == goalTextView {
             let currentText = goalTextView.text ?? ""
@@ -34,5 +35,18 @@ extension AddGoalViewController: UITextViewDelegate {
             goalTextView.text = "What is your goal?"
             goalTextView.textColor = UIColor.lightGray
         }
+    }
+    override func prepare(for segue: UIStoryboardSegue, sender _: Any?) {
+        if segue.identifier == ADD_POINTS {
+            let pointsViewController = segue.destination as! PointsViewController
+            pointsViewController.transitioningDelegate = self
+            pointsViewController.initData(description: goalTextView.text, type: goalType!)
+        }
+    }
+    func animationController(forPresented presented: UIViewController, presenting: UIViewController, source: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+        return PresenterViewController()
+    }
+    func animationController(forDismissed dismissed: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+        return DismissalViewContoller()
     }
 }

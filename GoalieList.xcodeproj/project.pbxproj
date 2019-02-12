@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7915E17821FEA5F1008A5AEC /* SegueIdentifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7915E17721FEA5F1008A5AEC /* SegueIdentifiers.swift */; };
+		7915E17A21FEAE3B008A5AEC /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7915E17921FEAE3B008A5AEC /* UIViewControllerExtension.swift */; };
+		7915E17C21FEBCDE008A5AEC /* PresenterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7915E17B21FEBCDE008A5AEC /* PresenterViewController.swift */; };
+		7915E17E21FEBD0C008A5AEC /* DismissalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7915E17D21FEBD0C008A5AEC /* DismissalViewController.swift */; };
 		791E92F62127B7A3000B8295 /* GoalUpdater.swift in Sources */ = {isa = PBXBuildFile; fileRef = 791E92F52127B7A3000B8295 /* GoalUpdater.swift */; };
 		791E92F82127B914000B8295 /* Deletable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 791E92F72127B914000B8295 /* Deletable.swift */; };
 		791E92FA2127BED6000B8295 /* Updatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 791E92F92127BED6000B8295 /* Updatable.swift */; };
@@ -19,21 +23,18 @@
 		7941746620E95125002EA16A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7941746520E95125002EA16A /* AppDelegate.swift */; };
 		7941746820E95125002EA16A /* GoalsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7941746720E95125002EA16A /* GoalsViewController.swift */; };
 		7941746B20E95125002EA16A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7941746920E95125002EA16A /* Main.storyboard */; };
-		7941746E20E95125002EA16A /* GoalList.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7941746C20E95125002EA16A /* GoalList.xcdatamodeld */; };
+		7941746E20E95125002EA16A /* GoalieList.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7941746C20E95125002EA16A /* GoalieList.xcdatamodeld */; };
 		7941747020E95126002EA16A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7941746F20E95126002EA16A /* Assets.xcassets */; };
 		7941747320E95126002EA16A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7941747120E95126002EA16A /* LaunchScreen.storyboard */; };
-		7941747E20E95126002EA16A /* GoalListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7941747D20E95126002EA16A /* GoalListTests.swift */; };
-		7941748C20E96376002EA16A /* SegueIdentifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7941748B20E96376002EA16A /* SegueIdentifiers.swift */; };
+		7941747E20E95126002EA16A /* GoalieListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7941747D20E95126002EA16A /* GoalieListTests.swift */; };
 		794D48C121FBF76E001517A1 /* ConfettiView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 794D48C021FBF76E001517A1 /* ConfettiView.swift */; };
 		794ED41320EC422700DB5982 /* GoalSaver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 794ED41220EC422700DB5982 /* GoalSaver.swift */; };
-		7978A2EA21FBBBC500728B39 /* PresentationViewControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7978A2E921FBBBC500728B39 /* PresentationViewControllerFactory.swift */; };
 		797B6AC620EECFB300E4AF8D /* Goal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797B6AC520EECFB300E4AF8D /* Goal.swift */; };
 		797B6ACA20EED85000E4AF8D /* GoalTableViewCellConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797B6AC920EED85000E4AF8D /* GoalTableViewCellConfigurator.swift */; };
 		797B6ACC20EEDE0700E4AF8D /* GoalDeleter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797B6ACB20EEDE0700E4AF8D /* GoalDeleter.swift */; };
 		797C7F6620EC6E5500784086 /* UIButtonKeyboardAnimationExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797C7F6520EC6E5500784086 /* UIButtonKeyboardAnimationExtension.swift */; };
 		79A9BC9720ED646D00237C55 /* Saveable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79A9BC9620ED646D00237C55 /* Saveable.swift */; };
 		79A9BC9F20ED8C3F00237C55 /* GoalRetriever.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79A9BC9E20ED8C3F00237C55 /* GoalRetriever.swift */; };
-		79CF894720ED447500B4E956 /* PresentationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79CF894620ED447500B4E956 /* PresentationViewController.swift */; };
 		79CF894920ED4C2400B4E956 /* PresentationDirection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79CF894820ED4C2400B4E956 /* PresentationDirection.swift */; };
 		79DDCA4F20ED2D31002DF38B /* PointsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79DDCA4E20ED2D31002DF38B /* PointsViewController.swift */; };
 		79DDCA5120ED31CD002DF38B /* PointsViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79DDCA5020ED31CD002DF38B /* PointsViewControllerExtension.swift */; };
@@ -54,6 +55,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7915E17721FEA5F1008A5AEC /* SegueIdentifiers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SegueIdentifiers.swift; sourceTree = "<group>"; };
+		7915E17921FEAE3B008A5AEC /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
+		7915E17B21FEBCDE008A5AEC /* PresenterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresenterViewController.swift; sourceTree = "<group>"; };
+		7915E17D21FEBD0C008A5AEC /* DismissalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DismissalViewController.swift; sourceTree = "<group>"; };
 		791E92F52127B7A3000B8295 /* GoalUpdater.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalUpdater.swift; sourceTree = "<group>"; };
 		791E92F72127B914000B8295 /* Deletable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Deletable.swift; sourceTree = "<group>"; };
 		791E92F92127BED6000B8295 /* Updatable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Updatable.swift; sourceTree = "<group>"; };
@@ -72,19 +77,16 @@
 		7941747220E95126002EA16A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7941747420E95126002EA16A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7941747920E95126002EA16A /* GoalListTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GoalListTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		7941747D20E95126002EA16A /* GoalListTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalListTests.swift; sourceTree = "<group>"; };
+		7941747D20E95126002EA16A /* GoalieListTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalieListTests.swift; sourceTree = "<group>"; };
 		7941747F20E95126002EA16A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7941748B20E96376002EA16A /* SegueIdentifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegueIdentifiers.swift; sourceTree = "<group>"; };
 		794D48C021FBF76E001517A1 /* ConfettiView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfettiView.swift; sourceTree = "<group>"; };
 		794ED41220EC422700DB5982 /* GoalSaver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalSaver.swift; sourceTree = "<group>"; };
-		7978A2E921FBBBC500728B39 /* PresentationViewControllerFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentationViewControllerFactory.swift; sourceTree = "<group>"; };
 		797B6AC520EECFB300E4AF8D /* Goal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Goal.swift; sourceTree = "<group>"; };
 		797B6AC920EED85000E4AF8D /* GoalTableViewCellConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalTableViewCellConfigurator.swift; sourceTree = "<group>"; };
 		797B6ACB20EEDE0700E4AF8D /* GoalDeleter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalDeleter.swift; sourceTree = "<group>"; };
 		797C7F6520EC6E5500784086 /* UIButtonKeyboardAnimationExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButtonKeyboardAnimationExtension.swift; sourceTree = "<group>"; };
 		79A9BC9620ED646D00237C55 /* Saveable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Saveable.swift; sourceTree = "<group>"; };
 		79A9BC9E20ED8C3F00237C55 /* GoalRetriever.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalRetriever.swift; sourceTree = "<group>"; };
-		79CF894620ED447500B4E956 /* PresentationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentationViewController.swift; sourceTree = "<group>"; };
 		79CF894820ED4C2400B4E956 /* PresentationDirection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentationDirection.swift; sourceTree = "<group>"; };
 		79DDCA4E20ED2D31002DF38B /* PointsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PointsViewController.swift; sourceTree = "<group>"; };
 		79DDCA5020ED31CD002DF38B /* PointsViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PointsViewControllerExtension.swift; sourceTree = "<group>"; };
@@ -120,6 +122,7 @@
 				79DDCA5020ED31CD002DF38B /* PointsViewControllerExtension.swift */,
 				797C7F6520EC6E5500784086 /* UIButtonKeyboardAnimationExtension.swift */,
 				79DDCA5220ED33B8002DF38B /* UIViewShakeExtension.swift */,
+				7915E17921FEAE3B008A5AEC /* UIViewControllerExtension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -127,8 +130,8 @@
 		7941745920E95125002EA16A = {
 			isa = PBXGroup;
 			children = (
-				7941746420E95125002EA16A /* GoalList */,
-				7941747C20E95126002EA16A /* GoalListTests */,
+				7941746420E95125002EA16A /* GoalieList */,
+				7941747C20E95126002EA16A /* GoalieListTests */,
 				7941746320E95125002EA16A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -142,10 +145,9 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		7941746420E95125002EA16A /* GoalList */ = {
+		7941746420E95125002EA16A /* GoalieList */ = {
 			isa = PBXGroup;
 			children = (
-				7978A2E821FBBBA400728B39 /* Factories */,
 				794ED40F20EC40C900DB5982 /* Protocols */,
 				79EB485520E995CB006E1EE5 /* Enums */,
 				793F142F20E9762B001315B7 /* Extensions */,
@@ -155,16 +157,16 @@
 				7941746520E95125002EA16A /* AppDelegate.swift */,
 				7941747420E95126002EA16A /* Info.plist */,
 			);
-			path = GoalList;
+			path = GoalieList;
 			sourceTree = "<group>";
 		};
-		7941747C20E95126002EA16A /* GoalListTests */ = {
+		7941747C20E95126002EA16A /* GoalieListTests */ = {
 			isa = PBXGroup;
 			children = (
-				7941747D20E95126002EA16A /* GoalListTests.swift */,
+				7941747D20E95126002EA16A /* GoalieListTests.swift */,
 				7941747F20E95126002EA16A /* Info.plist */,
 			);
-			path = GoalListTests;
+			path = GoalieListTests;
 			sourceTree = "<group>";
 		};
 		7941748820E9512C002EA16A /* Controller */ = {
@@ -173,7 +175,8 @@
 				7941746720E95125002EA16A /* GoalsViewController.swift */,
 				793F143A20E98571001315B7 /* AddGoalViewController.swift */,
 				79DDCA4E20ED2D31002DF38B /* PointsViewController.swift */,
-				79CF894620ED447500B4E956 /* PresentationViewController.swift */,
+				7915E17B21FEBCDE008A5AEC /* PresenterViewController.swift */,
+				7915E17D21FEBD0C008A5AEC /* DismissalViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -196,11 +199,11 @@
 			isa = PBXGroup;
 			children = (
 				797B6ACD20EEDF3200E4AF8D /* GoalsManager */,
-				7941748B20E96376002EA16A /* SegueIdentifiers.swift */,
 				793F143220E97711001315B7 /* Constants.swift */,
+				7915E17721FEA5F1008A5AEC /* SegueIdentifiers.swift */,
 				797B6AC520EECFB300E4AF8D /* Goal.swift */,
 				797B6AC920EED85000E4AF8D /* GoalTableViewCellConfigurator.swift */,
-				7941746C20E95125002EA16A /* GoalList.xcdatamodeld */,
+				7941746C20E95125002EA16A /* GoalieList.xcdatamodeld */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -213,14 +216,6 @@
 				791E92F92127BED6000B8295 /* Updatable.swift */,
 			);
 			path = Protocols;
-			sourceTree = "<group>";
-		};
-		7978A2E821FBBBA400728B39 /* Factories */ = {
-			isa = PBXGroup;
-			children = (
-				7978A2E921FBBBC500728B39 /* PresentationViewControllerFactory.swift */,
-			);
-			path = Factories;
 			sourceTree = "<group>";
 		};
 		797B6ACD20EEDF3200E4AF8D /* GoalsManager */ = {
@@ -303,7 +298,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 7941745D20E95125002EA16A /* Build configuration list for PBXProject "GoalList" */;
+			buildConfigurationList = 7941745D20E95125002EA16A /* Build configuration list for PBXProject "GoalieList" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -348,18 +343,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				79CF894720ED447500B4E956 /* PresentationViewController.swift in Sources */,
 				794ED41320EC422700DB5982 /* GoalSaver.swift in Sources */,
 				793F143820E97DAD001315B7 /* GoalTableViewCell.swift in Sources */,
+				7915E17C21FEBCDE008A5AEC /* PresenterViewController.swift in Sources */,
 				79A9BC9F20ED8C3F00237C55 /* GoalRetriever.swift in Sources */,
 				79A9BC9720ED646D00237C55 /* Saveable.swift in Sources */,
 				793F143B20E98571001315B7 /* AddGoalViewController.swift in Sources */,
-				7941748C20E96376002EA16A /* SegueIdentifiers.swift in Sources */,
-				7941746E20E95125002EA16A /* GoalList.xcdatamodeld in Sources */,
+				7941746E20E95125002EA16A /* GoalieList.xcdatamodeld in Sources */,
 				7941746820E95125002EA16A /* GoalsViewController.swift in Sources */,
 				791E92FA2127BED6000B8295 /* Updatable.swift in Sources */,
 				797B6ACC20EEDE0700E4AF8D /* GoalDeleter.swift in Sources */,
-				7978A2EA21FBBBC500728B39 /* PresentationViewControllerFactory.swift in Sources */,
+				7915E17821FEA5F1008A5AEC /* SegueIdentifiers.swift in Sources */,
 				79DDCA4F20ED2D31002DF38B /* PointsViewController.swift in Sources */,
 				79DDCA5120ED31CD002DF38B /* PointsViewControllerExtension.swift in Sources */,
 				793F143320E97711001315B7 /* Constants.swift in Sources */,
@@ -367,6 +361,7 @@
 				794D48C121FBF76E001517A1 /* ConfettiView.swift in Sources */,
 				791E92F62127B7A3000B8295 /* GoalUpdater.swift in Sources */,
 				79EB485720E995DB006E1EE5 /* GoalType.swift in Sources */,
+				7915E17A21FEAE3B008A5AEC /* UIViewControllerExtension.swift in Sources */,
 				791E92F82127B914000B8295 /* Deletable.swift in Sources */,
 				797C7F6620EC6E5500784086 /* UIButtonKeyboardAnimationExtension.swift in Sources */,
 				79DDCA5320ED33B8002DF38B /* UIViewShakeExtension.swift in Sources */,
@@ -376,6 +371,7 @@
 				793F143120E9764A001315B7 /* GoalsViewControllerExtension.swift in Sources */,
 				79CF894920ED4C2400B4E956 /* PresentationDirection.swift in Sources */,
 				79EB487B20E9CA23006E1EE5 /* PlaceholderVisibility.swift in Sources */,
+				7915E17E21FEBD0C008A5AEC /* DismissalViewController.swift in Sources */,
 				797B6ACA20EED85000E4AF8D /* GoalTableViewCellConfigurator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -384,7 +380,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7941747E20E95126002EA16A /* GoalListTests.swift in Sources */,
+				7941747E20E95126002EA16A /* GoalieListTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -538,7 +534,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = YC4AH8GSKC;
-				INFOPLIST_FILE = GoalList/Info.plist;
+				INFOPLIST_FILE = GoalieList/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -557,7 +553,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = YC4AH8GSKC;
-				INFOPLIST_FILE = GoalList/Info.plist;
+				INFOPLIST_FILE = GoalieList/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -615,7 +611,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		7941745D20E95125002EA16A /* Build configuration list for PBXProject "GoalList" */ = {
+		7941745D20E95125002EA16A /* Build configuration list for PBXProject "GoalieList" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				7941748020E95126002EA16A /* Debug */,
@@ -645,13 +641,13 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		7941746C20E95125002EA16A /* GoalList.xcdatamodeld */ = {
+		7941746C20E95125002EA16A /* GoalieList.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
 				7941746D20E95125002EA16A /* GoalList.xcdatamodel */,
 			);
 			currentVersion = 7941746D20E95125002EA16A /* GoalList.xcdatamodel */;
-			path = GoalList.xcdatamodeld;
+			path = GoalieList.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};

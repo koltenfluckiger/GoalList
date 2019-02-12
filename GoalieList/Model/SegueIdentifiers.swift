@@ -8,7 +8,8 @@
 
 import Foundation
 
-// MARK: ViewController Identifiers
+// MARK: Segue Identifiers
 
-let ADD_GOAL_VIEWCONTROLLER = "AddGoalViewController"
-let ADD_POINTS_VIEWCONTROLLER = "PointsViewController"
+let ADD_GOAL = "ToAddGoalsViewController"
+let ADD_POINTS = "ToPointsViewController"
+let BACK_TO_GOALS_VIEWCONTROLLER = "BackToGoalsViewController"

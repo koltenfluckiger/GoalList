@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-extension PointsViewController: UITextFieldDelegate {
+extension PointsViewController: UITextFieldDelegate, UIViewControllerTransitioningDelegate {
 
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
         if textField == pointsTextField {
@@ -19,6 +19,13 @@ extension PointsViewController: UITextFieldDelegate {
             return changedText.count <= 3
         }
         return true
+    }
+    
+    func animationController(forPresented presented: UIViewController, presenting: UIViewController, source: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+        return PresenterViewController()
+    }
+    func animationController(forDismissed dismissed: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+        return DismissalViewContoller()
     }
 
 }

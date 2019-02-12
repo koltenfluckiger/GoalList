@@ -48,7 +48,7 @@ class PointsViewController: UIViewController {
 
     // MARK: Functions
 
-    func saveGoal() {
+    private func saveGoal() {
         
         guard let points = Int32(pointsTextField.text!) else { return }
         let context = appDelegate.persistentContainer.viewContext
@@ -64,7 +64,8 @@ class PointsViewController: UIViewController {
         let goalSaver = GoalSaver(goalObject: goal)
         goalSaver.executeSave()
         
-        performSegue(withIdentifier: "backHome", sender: self)
+ performSegue(withIdentifier: BACK_TO_GOALS_VIEWCONTROLLER, sender: self)
+        
     }
 
     @objc private func dismissKeyboard() {
@@ -80,8 +81,10 @@ class PointsViewController: UIViewController {
             saveGoal()
         }
     }
+        
 
     @IBAction func backButton(_: UIButton) {
-        presentingViewController?.dismiss(animated: true, completion: nil)
+        pointsTextField.resignFirstResponder()
+        dismiss(animated: true, completion: nil)
     }
 }

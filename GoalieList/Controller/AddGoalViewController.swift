@@ -29,7 +29,7 @@ class AddGoalViewController: UIViewController {
 
     //  MARK: Properties
 
-    private var goalType: GoalType?
+    var goalType: GoalType?
     var placeholderVisiblity: Visibility = .visible
 
     //  MARK: Life Cycle Functions
@@ -45,16 +45,9 @@ class AddGoalViewController: UIViewController {
         nextButton.detachKeyboardObserver()
     }
 
-    override func prepare(for segue: UIStoryboardSegue, sender _: Any?) {
-        if segue.identifier == ADD_POINTS {
-            let destinationVC = segue.destination as! PointsViewController
-            destinationVC.initData(description: goalTextView.text, type: goalType!)
-        }
-    }
-
     //  MARK: Functions
 
-    @objc private func dismissKeyboard() {
+    @objc func dismissKeyboard() {
         view.endEditing(true)
     }
 
@@ -62,7 +55,7 @@ class AddGoalViewController: UIViewController {
 
     @IBAction func backButton(_: UIButton) {
         goalTextView.resignFirstResponder()
-        presentingViewController?.dismiss(animated: true, completion: nil)
+        self.dismiss(animated: true, completion: nil)
     }
 
     @IBAction func shortTermGoalButton(_: UIButton) {
@@ -83,6 +76,7 @@ class AddGoalViewController: UIViewController {
         } else if goalType == nil {
             buttonStackView.shake()
         } else {
+            goalTextView.resignFirstResponder()
             performSegue(withIdentifier: ADD_POINTS, sender: self)
         }
     }
