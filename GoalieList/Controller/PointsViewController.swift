@@ -25,10 +25,10 @@ class PointsViewController: UIViewController {
     @IBOutlet var addGoalButton: UIButton!
 
     
-    var goalDescription: String!
-    var goalType: GoalType!
+    internal var goalDescription: String!
+    internal var goalType: GoalType!
     
-    func initData(description: String, type: GoalType) {
+    internal func initData(description: String, type: GoalType) {
         goalDescription = description
         goalType = type
     }

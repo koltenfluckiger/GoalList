@@ -35,7 +35,6 @@
 		797C7F6620EC6E5500784086 /* UIButtonKeyboardAnimationExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797C7F6520EC6E5500784086 /* UIButtonKeyboardAnimationExtension.swift */; };
 		79A9BC9720ED646D00237C55 /* Saveable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79A9BC9620ED646D00237C55 /* Saveable.swift */; };
 		79A9BC9F20ED8C3F00237C55 /* GoalRetriever.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79A9BC9E20ED8C3F00237C55 /* GoalRetriever.swift */; };
-		79CF894920ED4C2400B4E956 /* PresentationDirection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79CF894820ED4C2400B4E956 /* PresentationDirection.swift */; };
 		79DDCA4F20ED2D31002DF38B /* PointsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79DDCA4E20ED2D31002DF38B /* PointsViewController.swift */; };
 		79DDCA5120ED31CD002DF38B /* PointsViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79DDCA5020ED31CD002DF38B /* PointsViewControllerExtension.swift */; };
 		79DDCA5320ED33B8002DF38B /* UIViewShakeExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79DDCA5220ED33B8002DF38B /* UIViewShakeExtension.swift */; };
@@ -87,7 +86,6 @@
 		797C7F6520EC6E5500784086 /* UIButtonKeyboardAnimationExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButtonKeyboardAnimationExtension.swift; sourceTree = "<group>"; };
 		79A9BC9620ED646D00237C55 /* Saveable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Saveable.swift; sourceTree = "<group>"; };
 		79A9BC9E20ED8C3F00237C55 /* GoalRetriever.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalRetriever.swift; sourceTree = "<group>"; };
-		79CF894820ED4C2400B4E956 /* PresentationDirection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentationDirection.swift; sourceTree = "<group>"; };
 		79DDCA4E20ED2D31002DF38B /* PointsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PointsViewController.swift; sourceTree = "<group>"; };
 		79DDCA5020ED31CD002DF38B /* PointsViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PointsViewControllerExtension.swift; sourceTree = "<group>"; };
 		79DDCA5220ED33B8002DF38B /* UIViewShakeExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewShakeExtension.swift; sourceTree = "<group>"; };
@@ -234,7 +232,6 @@
 			children = (
 				79EB485620E995DB006E1EE5 /* GoalType.swift */,
 				79EB487A20E9CA23006E1EE5 /* PlaceholderVisibility.swift */,
-				79CF894820ED4C2400B4E956 /* PresentationDirection.swift */,
 			);
 			path = Enums;
 			sourceTree = "<group>";
@@ -369,7 +366,6 @@
 				7941746620E95125002EA16A /* AppDelegate.swift in Sources */,
 				793F143D20E987D5001315B7 /* AddGoalViewControllerExtension.swift in Sources */,
 				793F143120E9764A001315B7 /* GoalsViewControllerExtension.swift in Sources */,
-				79CF894920ED4C2400B4E956 /* PresentationDirection.swift in Sources */,
 				79EB487B20E9CA23006E1EE5 /* PlaceholderVisibility.swift in Sources */,
 				7915E17E21FEBD0C008A5AEC /* DismissalViewController.swift in Sources */,
 				797B6ACA20EED85000E4AF8D /* GoalTableViewCellConfigurator.swift in Sources */,

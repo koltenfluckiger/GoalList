@@ -14,10 +14,20 @@ import UIKit
 class GoalsViewController: UIViewController {
 
     // MARK: Outlets
-    @IBOutlet var goalTableView: UITableView!
-
+    @IBOutlet weak var goalTableView: UITableView!
+    @IBOutlet weak var welcomeStackView: UIStackView!
+    
     // MARK: Variables
-    var goals = [Goal]()
+    internal var goals = [Goal]() {
+        didSet {
+            if goals.count > 0 {
+                goalTableView.isHidden = false
+            }
+            else {
+                goalTableView.isHidden = true
+            }
+        }
+    }
 
     // MARK: Life Cycle Functions
 
@@ -47,10 +57,13 @@ class GoalsViewController: UIViewController {
 
         NSLayoutConstraint.activate([confettiView.topAnchor.constraint(equalTo: self.view.topAnchor), confettiView.bottomAnchor.constraint(equalTo: self.view.bottomAnchor), confettiView.leadingAnchor.constraint(equalTo: self.view.leadingAnchor), confettiView.trailingAnchor.constraint(equalTo: self.view.trailingAnchor), confettiView.heightAnchor.constraint(equalTo: self.view.heightAnchor), confettiView.widthAnchor.constraint(equalTo: self.view.widthAnchor)])
 
-        DispatchQueue.main.asyncAfter(deadline: .now() + 3) { [weak self] in
-            guard self == self else { return }
+        let animator = UIViewPropertyAnimator(duration: 3.0, curve: .easeOut, animations: {
+            confettiView.alpha = 0
+        })
+        animator.addCompletion {_ in 
             confettiView.removeFromSuperview()
         }
+        animator.startAnimation()
     }
 
     private func getGoals() {
@@ -58,9 +71,9 @@ class GoalsViewController: UIViewController {
         let fetchResult = NSFetchRequest<Goal>(entityName: "Goal")
         let goalRetriever = GoalRetriever(managedContext: context, fetchRequest: fetchResult)
 
-        goalRetriever.executeFetch(completion: { [weak self] goal in
+        goalRetriever.executeFetch(completion: { [weak self] goals in
             guard let self = self else {return}
-            guard let goals = goal else { return }
+            guard let goals = goals else { return }
             self.goals = goals
         })
     }

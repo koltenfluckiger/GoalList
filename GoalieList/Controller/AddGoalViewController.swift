@@ -29,8 +29,8 @@ class AddGoalViewController: UIViewController {
 
     //  MARK: Properties
 
-    var goalType: GoalType?
-    var placeholderVisiblity: Visibility = .visible
+    internal var goalType: GoalType?
+    internal var placeholderVisiblity: Visibility = .visible
 
     //  MARK: Life Cycle Functions
 
